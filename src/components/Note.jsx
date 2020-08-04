@@ -1,6 +1,5 @@
 import React from "react";
 import DeleteRoundedIcon from "@material-ui/icons/DeleteRounded";
-import EditRoundedIcon from "@material-ui/icons/EditRounded";
 function Note(props) {
   function handleClick() {
     props.onDelete(props.id);
@@ -13,9 +12,6 @@ function Note(props) {
 
       <button onClick={handleClick}>
         <DeleteRoundedIcon />
-      </button>
-      <button onClick={handleClick}>
-        <EditRoundedIcon />
       </button>
     </div>
   );
